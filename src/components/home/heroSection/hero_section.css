@@ -1,0 +1,135 @@
+.hero-sec-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: clamp(90px, 8vw, 120px);
+  padding-bottom: 50px;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+.hero-main {
+  position: relative;
+  background-color: rgb(243, 249, 255);
+}
+.hero-main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  clip-path: polygon(100% -50%, 28% 100%, 100% 100%);
+}
+.hero-container {
+  display: flex;
+}
+.hero-container .left,.hero-container .right {
+  flex: 1;
+}
+.hero-heading {
+  font-size: clamp(2.1rem, 3vw, 3.3rem);
+}
+.hero-heading .heading-blue {
+  color: var(--primary-color);
+}
+.hero-desc {
+  font-size: clamp(0.7rem, 1.2vw, 0.9rem);
+}
+.hero-top-btn {
+  margin-top: clamp(20px, 3vw, 40px);
+  font-size: clamp(0.7rem, 1.2vw, 0.9rem);
+  background-color: rgb(212, 234, 255) !important;
+  padding: clamp(8px, 1.2vw, 12px) clamp(12px, 3vw, 18px) !important;
+  font-weight: 500;
+  width: fit-content;
+  color: var(--primary-color) !important;
+  transition: all 0.3s ease;
+}
+.hero-top-btn svg {
+  fill: var(--primary-color);
+  margin-right: 5px;
+  height: clamp(16px, 1.2vw, 18px);
+  transition: all 0.3s ease;
+}
+.hero-top-btn:hover {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+.hero-top-btn:hover svg {
+  fill: white;
+}
+
+.hero-bottom-btn-sec {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+.hero-bottom-btn-sec .custom-btn:nth-child(2) {
+  padding: clamp(5px, 1vw, 12px) clamp(8px, 2vw, 12px) !important;
+  color: black;
+  &:hover{
+    color: rgb(255, 255, 255);
+  }
+}
+.hero-container .right {
+  min-height: clamp(200px, 10vw, 400px);
+}
+.loti-anim-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-container .right .right-floating-sec {
+  background-color: white;
+  max-width: 250px;
+  margin: 40px;
+  padding: 15px 20px;
+}
+.right-floating-sec .icons-container .icon {
+  height: clamp(25px, 2vw, 34px);
+  width: clamp(25px, 2vw, 34px);
+  max-height: 50px;
+  max-width: 50px;
+  background-color: var(--primary-color);
+  margin-left: -8px;
+  border: 2px solid white;
+  object-fit: cover;
+  font-size: clamp(0.5rem, 1.2vw, 0.6rem);
+}
+.right-floating-sec .floating-sec-desc {
+  font-size: clamp(0.5rem, .5vw, 0.9rem);
+  color: rgb(116, 116, 116);
+}
+.hero-bottom {
+  /* margin-top: clamp(10px,5vw,50px); */
+  background-color: white;
+  padding: clamp(10px, 5vw, 50px);
+  box-shadow: 1px 0px 20px 0px #0000000f;
+}
+
+.hero-bottom-item {
+
+
+  width: fit-content;
+  cursor: pointer;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+.hero-bottom-item:hover .icon-container {
+  background-color: var(--primary-color);
+}
+.hero-bottom-item:hover .icon-container svg {
+  fill: white;
+}
+.hero-bottom-item-heading {
+  line-height: 1.5;
+  margin-bottom: 0;
+  color: rgb(80, 80, 80);
+  font-size: clamp(14px, 1.4vw, 18px);
+}
+.hero-bottom-item-desc {
+  color: rgb(124, 124, 124);
+  font-size: clamp(10px, 1.4vw, 14px);
+}

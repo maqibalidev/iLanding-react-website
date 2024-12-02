@@ -1,0 +1,51 @@
+.service-container {
+    padding: clamp(30px,5vw,50px) 0;
+    background-color: rgb(243, 249, 255);
+  }
+  .service-items {
+    margin-top: clamp(20px, 3vw, 35px);
+    gap: clamp(15px, 2vw, 22px);
+  }
+  .service-item {
+    gap: clamp(10px, 2vw, 30px);
+    padding: clamp(15px, 2vw, 28px);
+    background-color: white;
+    min-width: 45%;
+    flex: 1;
+    box-shadow: 0px 1px 20px 6px #dedede6e;
+  } 
+  .service-item .text-sec {
+    flex: 1;
+  } 
+  .service-item .heading {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+  }  
+  .service-item .icon {
+    height: clamp(36px, 4vw, 52px);
+    width: clamp(36px, 4vw, 52px);
+    background-color: var(--primary-light-color);
+    transition: all 0.5s ease;
+  } 
+  .service-item .icon svg {
+    fill: var(--primary-color);
+    height: 50%;
+    width: 50%;
+    transition: all 0.5s ease;
+  }
+  .service-item .desc {
+    margin-top: 10px;
+    font-size: clamp(11px,1vw,14px);
+  } 
+  .service-item:hover .icon-container {
+    background-color: var(--primary-color);
+  }
+  .service-item:hover .icon-container svg {
+    fill: white;
+  }
+  .service-item-btn {
+    color: var(--primary-color);
+    gap: 5px;
+    font-weight: 500;
+    font-size: clamp(12px, 1.4vw, 14px);
+  }
+  

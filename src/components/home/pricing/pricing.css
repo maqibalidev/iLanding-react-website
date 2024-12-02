@@ -1,0 +1,125 @@
+.pricing-main {
+    background-color: rgb(243, 249, 255);
+  }
+  .pricing-container {
+    padding: clamp(30px,5vw,50px) 0;
+  }
+  .pricing-items {
+    margin-top: clamp(20px, 4vw, 40px);
+    gap: 25px;
+  }
+  .pricing-item {
+    max-width: 380px;
+    min-width: 300px;
+    flex: 1;
+    height: 100% !important;
+    background-color: white;
+    box-shadow: 0px 2px 20px 0px #00000017;
+    padding: 25px;
+    border-radius: 10px;
+  }
+  .pricing-item .ul-heading{
+    font-size: clamp(14px, 2vw, 16px);
+  }
+  .pricing-item .heading {
+    font-weight: normal;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    color: rgb(82, 82, 82);
+  }
+  .pricing-item .price {
+    color: var(--primary-color);
+    margin-top: clamp(10px,2vw,20px);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 3vw, 3.3rem);
+  }
+  .pricing-item .price sup {
+    color: black;
+    font-size: clamp(14px, 2vw, 16px);
+    vertical-align: super;
+  }
+  .pricing-item .desc {
+    margin: clamp(10px, 2vw, 18px) 0;
+    font-size: clamp(12px, 2vw, 14px);
+  }
+  .pricing-item .month {
+    color: rgb(156, 156, 156);
+    font-size: clamp(14px, 2vw, 16px);
+  }
+  .pricing-item ul {
+    padding: 0;
+    width: 100%;
+  }
+  .pricing-item ul li {
+    display: flex;
+    gap: 10px;
+    font-size: clamp(12px, 2vw, 14px);
+    font-weight: 500;
+    color: rgb(80, 79, 79);
+    padding: 8px 0;
+    list-style: none;
+  }
+  .pricing-item ul li .li-icon {
+    background-color: var(--primary-color);
+    height: 18px;
+    width: 18px;
+  }
+  .pricing-item ul li .li-icon svg {
+    fill: white;
+    height: 70%;
+    width: 70%;
+    margin-top: 1px;
+  }
+  .pricing-item ul li.exclude svg {
+    fill: rgb(185, 185, 185);
+  }
+  .pricing-item .custom-btn {
+    margin-bottom: clamp(10px,4vw,20px);
+  } 
+  .pricing-items .popular-item {
+    position: relative;
+    background-color: var(--primary-color);
+    height: fit-content;
+  }
+  .pricing-items .popular-item .custom-btn {
+    background-color: white !important;
+    color: var(--primary-color);
+  }
+  .pricing-items .popular-item .heading,
+  .pricing-items .popular-item .price,
+   .pricing-items .popular-item .price sup, 
+   .pricing-items .popular-item .month, 
+   .pricing-items .popular-item .ul-heading , .pricing-items .popular-item ul li,
+    .pricing-items .popular-item .desc {
+    color: rgb(241, 241, 241) !important;
+  }
+  .pricing-items .popular-item ul li .li-icon {
+    background-color: white;
+    height: clamp(16px, 3vw, 17.5px);
+    width: clamp(16px, 3vw, 18px);
+  }
+  .pricing-items .popular-item ul li .li-icon svg {
+    fill: var(--primary-color);
+    height: 65%;
+    width: 65%;
+  }
+  .pricing-items .popular-item::before {
+    content: "Most Popular";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    height: 30px;
+    padding: 0 14px;
+    border-radius: 100px;
+    color: var(--primary-color);
+    background-color: white;
+    box-shadow: 0px 2px 20px 0px #00000025;
+    font-weight: 700;
+    font-size:clamp(10px,2vw,14px);
+    display: flex;
+    align-items: center;
+    line-height: 12px;
+  }
+  

@@ -1,0 +1,15 @@
+.icon-container {
+  background-color: var(--primary-light-color);
+  height: clamp(42px,4vw,55px);
+  width: clamp(42px,4vw,55px);
+  transition: all 0.5s ease;
+  svg {
+    fill: var(--primary-color);
+    transition: all 0.5s ease;
+    height: clamp(16px,2.5vw,26px);
+  }
+}
+.small_icon {
+  height: clamp(24px,2.5vw,30px);
+  width: clamp(24px,2.5vw,30px);
+}

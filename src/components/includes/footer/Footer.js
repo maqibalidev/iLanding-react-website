@@ -1,0 +1,162 @@
+import React from "react";
+import "./footer.css";
+import { Link } from "react-router-dom";
+const Footer = () => {
+  return (
+    <div className="footer-outer-container ">
+      <div className="custom-container footer-container">
+        <div className="row">
+          <div className="col-12 col-md-4   col-lg-5 left">
+            <h1 className="heading">iLanding</h1>
+            <div className="footer-item contact-links small-text">
+                <span className="links-address small-text">
+                  A108 Adam street New York, NY 54554 United States
+                </span>
+                <Link to="tel:+923207043185"  className="contact-phone-no d-block">
+                  <strong>Phone: </strong>+1 23424 3242 4232
+                </Link>
+                <Link to="mailto:email@example.com">
+                  <strong>Email: </strong>maqibali608@gmail.com
+                </Link>
+              </div>
+            <ul className="icons-container d-flex">
+              <li>   <Link className="icon d-flex align-items-center justify-content-center rounded-circle">
+
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 24 24">
+<path d="M 2.3671875 3 L 9.4628906 13.140625 L 2.7402344 21 L 5.3808594 21 L 10.644531 14.830078 L 14.960938 21 L 21.871094 21 L 14.449219 10.375 L 20.740234 3 L 18.140625 3 L 13.271484 8.6875 L 9.2988281 3 L 2.3671875 3 z M 6.2070312 5 L 8.2558594 5 L 18.033203 19 L 16.001953 19 L 6.2070312 5 z"></path>
+</svg>
+              </Link></li>
+              <li>
+                <Link className="icon d-flex align-items-center justify-content-center rounded-circle">
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                  >
+                    <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                  </svg>
+                </Link>
+              </li>
+              <li>
+                <Link className="icon d-flex align-items-center justify-content-center rounded-circle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 50 50"
+                  >
+                    <path d="M 25 3 C 12.861562 3 3 12.861562 3 25 C 3 36.019135 11.127533 45.138355 21.712891 46.728516 L 22.861328 46.902344 L 22.861328 29.566406 L 17.664062 29.566406 L 17.664062 26.046875 L 22.861328 26.046875 L 22.861328 21.373047 C 22.861328 18.494965 23.551973 16.599417 24.695312 15.410156 C 25.838652 14.220896 27.528004 13.621094 29.878906 13.621094 C 31.758714 13.621094 32.490022 13.734993 33.185547 13.820312 L 33.185547 16.701172 L 30.738281 16.701172 C 29.349697 16.701172 28.210449 17.475903 27.619141 18.507812 C 27.027832 19.539724 26.84375 20.771816 26.84375 22.027344 L 26.84375 26.044922 L 32.966797 26.044922 L 32.421875 29.564453 L 26.84375 29.564453 L 26.84375 46.929688 L 27.978516 46.775391 C 38.71434 45.319366 47 36.126845 47 25 C 47 12.861562 37.138438 3 25 3 z M 25 5 C 36.057562 5 45 13.942438 45 25 C 45 34.729791 38.035799 42.731796 28.84375 44.533203 L 28.84375 31.564453 L 34.136719 31.564453 L 35.298828 24.044922 L 28.84375 24.044922 L 28.84375 22.027344 C 28.84375 20.989871 29.033574 20.060293 29.353516 19.501953 C 29.673457 18.943614 29.981865 18.701172 30.738281 18.701172 L 35.185547 18.701172 L 35.185547 12.009766 L 34.318359 11.892578 C 33.718567 11.811418 32.349197 11.621094 29.878906 11.621094 C 27.175808 11.621094 24.855567 12.357448 23.253906 14.023438 C 21.652246 15.689426 20.861328 18.170128 20.861328 21.373047 L 20.861328 24.046875 L 15.664062 24.046875 L 15.664062 31.566406 L 20.861328 31.566406 L 20.861328 44.470703 C 11.816995 42.554813 5 34.624447 5 25 C 5 13.942438 13.942438 5 25 5 z"></path>
+                  </svg>{" "}
+                </Link>
+              </li>
+              <li>
+                <Link className="icon d-flex align-items-center justify-content-center rounded-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+<path d="M36.5,6h-25C8.468,6,6,8.468,6,11.5v25c0,3.032,2.468,5.5,5.5,5.5h25c3.032,0,5.5-2.468,5.5-5.5v-25	C42,8.468,39.532,6,36.5,6z M18,34c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1V21c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1V34z M15.5,18c-1.381,0-2.5-1.119-2.5-2.5c0-1.381,1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5C18,16.881,16.881,18,15.5,18z M35,34	c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1v-7.5c0-1.379-1.121-2.5-2.5-2.5S25,25.121,25,26.5V34c0,0.553-0.447,1-1,1h-3	c-0.553,0-1-0.447-1-1V21c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1v0.541C26.063,20.586,27.462,20,29,20c3.309,0,6,2.691,6,6V34z"></path>
+</svg>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-12 col-md-8 col-lg-7  mt-3 mt-sm-0  right">
+            <div className="d-flex footer-item-container  flex-wrap">
+              <div className="footer-item">
+                <h5 className="links-heading small-200-text">Useful Links</h5>
+                <ul>
+                  <li>
+                    <Link >Home</Link>
+                  </li>
+                  <li>
+                    <Link >About us</Link>
+                  </li>
+                  <li>
+                    <Link >Service</Link>
+                  </li>
+                  <li>
+                    <Link >Terms of service</Link>
+                  </li>
+                  <li>
+                    <Link >Privacy policy</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="footer-item ">
+                <h5 className="links-heading small-200-text">Our Services</h5>
+                <ul>
+                  <li>
+                    <Link >Home</Link>
+                  </li>
+                  <li>
+                    <Link >About us</Link>
+                  </li>
+                  <li>
+                    <Link >Service</Link>
+                  </li>
+                  <li>
+                    <Link >Terms of service</Link>
+                  </li>
+                  <li>
+                    <Link >Privacy policy</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="footer-item">
+                <h5 className="links-heading small-200-text">Useful Links</h5>
+                <ul>
+                  <li>
+                    <Link >Home</Link>
+                  </li>
+                  <li>
+                    <Link >About us</Link>
+                  </li>
+                  <li>
+                    <Link >Service</Link>
+                  </li>
+                  <li>
+                    <Link >Terms of service</Link>
+                  </li>
+                  <li>
+                    <Link >Privacy policy</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="footer-item ">
+                <h5 className="links-heading small-200-text">Our Services</h5>
+                <ul>
+                  <li>
+                    <Link >Home</Link>
+                  </li>
+                  <li>
+                    <Link >About us</Link>
+                  </li>
+                  <li>
+                    <Link >Service</Link>
+                  </li>
+                  <li>
+                    <Link >Terms of service</Link>
+                  </li>
+                  <li>
+                    <Link >Privacy policy</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom text-center small-text">
+          <span>
+          &copy; Copyright  <strong>iLanding</strong> All Rights Reserved
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer

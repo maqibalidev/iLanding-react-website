@@ -1,0 +1,68 @@
+.header {
+  padding:clamp(0px,2vw,10px) clamp(10px,8vw,20px) !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 20px auto;
+  background-color: rgb(255, 255, 255);
+  z-index: 5;
+  box-shadow: -1px 3px 20px 0px #00000021;
+}
+.header-logo {
+  margin-left: 10px;
+  font-size:clamp( 16px,2vw,21px) ;
+  font-weight: 500;
+  color: rgb(78, 78, 78) ;
+
+}
+.header .center ul {
+  margin: auto 0 !important;
+}
+.header .center ul li {
+  padding: 0px 5px;
+}
+.header .center ul li a {
+  color: rgba(54, 54, 54, 0.795);
+  transition: all 0.2s ease;
+  font-weight: 500;
+  font-size: clamp(10px,2vw, 14px);
+}
+.header .center ul li a svg {
+  fill: rgb(0, 0, 0);
+}
+.header .center ul li a:hover {
+  color: var(--primary-color);
+}
+.header .center ul li .active {
+  color: var(--primary-color);
+}
+.header .right .header-get-started-btn {
+  font-size: .7rem; 
+}
+.header-menu-btn {
+  padding: 6px ;
+  line-height: 0px ;
+  margin-left: 10px;
+  background-color: var(--primary-color);
+  border-radius: 100px;
+svg{
+  height: 15px;
+  width: 20px;
+}
+}
+.sidebar {
+  width: fit-content !important;
+}
+.sidebar-body::-webkit-scrollbar {
+  width: 4px;
+}
+.sidebar-body::-webkit-scrollbar-track {
+  background-color: #ffffff38;
+}
+.sidebar-body::-webkit-scrollbar-thumb {
+  background: #055a8b;
+  border-radius: 100px;
+}
+.sidebar-body::-webkit-scrollbar-thumb:hover {
+  background: #043e5f;
+}

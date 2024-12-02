@@ -1,0 +1,84 @@
+.faq-main {
+  background-color: rgb(243, 249, 255);
+}
+.faq-section-container {
+  padding: clamp(30px,5vw,50px) 0;
+}
+
+.faq-section-container .left .curl-arrow-img {
+  height: clamp(100px, 10vw, 200px);
+  width: clamp(100px, 10vw, 200px);
+}
+.faq-section-container .right .summary-drop-icon {
+  margin-bottom: 2px;
+  transition: all 0.2s ease;
+  transform-origin: center;
+}
+.faq-section-container .right .summary-drop-icon svg {
+  transition: all 0.2s ease;
+}
+.faq-section-container .right .summary-index {
+  color: var(--primary-color);
+}
+.faq-section-container .right details[open] summary {
+  color: var(--primary-color);
+}
+.faq-section-container .right details[open] .summary-drop-icon {
+  transform: rotate(90deg);
+}
+.faq-section-container .right details[open] .summary-drop-icon svg {
+  fill: var(--primary-color);
+}
+.faq-section-container .right details {
+  background-color: white;
+  box-shadow: 0px 0px 15px 2px #ededed;
+  margin-bottom: clamp(10px, 1vw, 20px);
+}
+.faq-section-container .right details summary {
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem) !important;
+  padding: clamp(10px, 1.5vw, 16px) 16px;
+  transition: all 0.2s ease;
+  color: rgb(82, 82, 82);
+}
+.faq-section-container .right details p {
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem) !important;
+  padding: 0px 16px 20px 16px;
+  margin: 0px;
+  margin-top: -10px;
+}
+.faq-section-container .right details:hover summary {
+  color: var(--primary-color);
+}
+.faq-section-container .right details:hover .summary-drop-icon svg {
+  fill: var(--primary-color);
+}
+.faq-heading {
+  font-weight: 500;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+.faq-desc {
+  font-size: clamp(12px, 3vw, 14px);
+}
+.faq-bottom {
+  background-color: var(--primary-color);
+  padding: clamp(10px, 10vw, 80px) 0px;
+  margin-top: clamp(10px,3vw,40px);
+}
+.faq-bottom .faq-bottom-container {
+  width: 55%;
+}
+.faq-bottom .custom-btn {
+  margin-top: 10px;
+  border: 1px solid white;
+}
+.faq-bottom .custom-btn:hover {
+  background-color: var(--primary-light-color) !important;
+}
+.faq-bottom .heading {
+  font-size: clamp(18px, 3vw, 26px);
+}
+.faq-bottom .desc {
+  font-size: clamp(12px, 2vw, 15px);
+}
+
+

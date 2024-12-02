@@ -1,0 +1,21 @@
+.custom-heading {
+    .heading::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      right: 0;
+      width: 46px;
+      height: 2.5px;
+      margin: auto;
+      background-color: var(--primary-color);
+    }
+    .heading{
+      font-size:clamp(1.2rem,3vw,1.7rem) ;
+    }
+    .desc{
+      margin-top: 20px;
+      font-size:clamp(12px,2vw,14px);
+    }
+  }
+  

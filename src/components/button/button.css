@@ -1,0 +1,31 @@
+.custom-btn{
+    display: flex;
+    gap: clamp(5px,.5vw,8px);
+    padding: clamp(8px ,1.5vw , var(--py)) clamp(16px ,3vw , var(--px)) !important;
+    justify-content: center;
+    align-items: center;
+    svg{
+        height: clamp(12px,2.5vw,20px);
+        width: clamp(12px,2.5vw,20px);
+    }
+}
+.btn-medium{
+    line-height: 11px !important;
+    font-size: clamp(9px,1.5vw,14px);
+}
+.btn-small{
+    line-height: 11px !important;
+    font-size: clamp(9px,1.5vw,12px);
+}
+.btn-large{
+    font-size: clamp(10px,1.5vw,14px);
+    font-weight: 500;
+}
+.custom-btn-bg{
+    background-color: var(--bg-color) !important;
+    color: black;
+    &:hover{
+        background-color: var(--primary-color) !important;
+        color: white;
+    }
+}
